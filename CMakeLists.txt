@@ -13,6 +13,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/HandLandmarks.msg"
+    "msg/RH56DFXCommand.msg"
     DEPENDENCIES geometry_msgs
 )
 
