@@ -7,14 +7,15 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rclpy REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/HandLandmarks.msg"
-    "msg/RH56DFXCommand.msg"
-    DEPENDENCIES geometry_msgs
+    "msg/RH56DFTPAngleCommand.msg"
+    "msg/RH56DFTPFeedback.msg"
+    DEPENDENCIES geometry_msgs std_msgs
 )
 
 if(BUILD_TESTING)
