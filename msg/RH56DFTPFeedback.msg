@@ -1,9 +1,9 @@
 # RH56DFTPFeedback.msg
 
-# Header
-std_msgs/Header header
+std_msgs/Header header          # Header
+string hand_id                  # "Left" or "Right"
 
-# Joint feedback (6 attuatori)
+# Joint feedback (6 actuators)
 int16[6] position
 int16[6] angle
 int16[6] force

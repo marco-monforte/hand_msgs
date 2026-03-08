@@ -1,7 +1,5 @@
 # RH56DFTPAngleCommand.msg
 
-# Header
-std_msgs/Header header
-
-# Pinky, Ring, Middle, Index, Thumb, Thumb_opposition
-float32[6] angles
+std_msgs/Header header          # Header
+string hand_id                  # "Left" or "Right"
+float32[6] angles               # Pinky, Ring, Middle, Index, Thumb, Thumb_opposition
